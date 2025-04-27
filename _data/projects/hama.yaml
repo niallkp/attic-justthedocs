@@ -1,0 +1,21 @@
+---
+retirement_date: 2020-04-15
+attic_issue: ATTIC-181
+attic_date: 2021-04-05
+attic_banner: true
+project_description: >-
+    Hama was a framework for Big Data analytics based on the Bulk Synchronous
+    Parallel paradigm.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

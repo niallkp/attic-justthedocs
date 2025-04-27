@@ -1,0 +1,25 @@
+---
+retirement_date: 2010-10-20
+attic_issue: ATTIC-95
+attic_date: 2010-10-27
+attic_banner: false
+project_name: Jakarta ECS
+project_domain: jakarta.apache.org/ecs
+project_description: >-
+    Jakarta previously hosted ECS (Element Construction Set), a Java API for
+    generating elements for any of a variety of markup languages (examples
+    included HTML 4.0 and XML).
+board_resolution: true
+board_reports: false
+downloads: true
+archive_path: jakarta/ecs
+source_repositories:
+    - type: Subversion
+      path: jakarta/ecs
+mailing_lists:
+    - dev
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - ECS

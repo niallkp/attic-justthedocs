@@ -1,0 +1,20 @@
+---
+retirement_date: 2020-06-17
+attic_issue: ATTIC-185
+attic_date: 2021-04-10
+attic_banner: true
+project_description: >-
+    Apache Crunch's mission was Simple and Efficient MapReduce Pipelines.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

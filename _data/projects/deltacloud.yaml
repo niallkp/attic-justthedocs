@@ -1,0 +1,25 @@
+---
+retirement_date: 2015-07-15
+attic_issue: ATTIC-140
+attic_date: 2016-02-27
+attic_banner: false
+project_description: >-
+    Deltacloud provided the API server and drivers necessary for connecting
+    to cloud providers via a cloud abstraction API.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - DTACLOUD
+wiki:
+    type: CWIKI
+    keys:
+        - DTACLOUD

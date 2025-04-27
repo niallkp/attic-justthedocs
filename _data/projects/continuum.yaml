@@ -1,0 +1,26 @@
+---
+retirement_date: 2016-05-18
+attic_issue: ATTIC-155
+attic_date: 2016-08-14
+attic_banner: false
+project_name: Continuum
+project_description: >-
+    Continuum was an enterprise-ready continuous integration server with
+    features such as automated builds, release management, role-based
+    security, and integration with popular build tools and source control
+    management systems.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - notifications
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

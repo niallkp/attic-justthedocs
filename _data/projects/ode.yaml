@@ -1,0 +1,26 @@
+---
+retirement_date: 2019-08-21
+attic_issue: ATTIC-175
+attic_date: 2020-01-14
+attic_banner: true 
+project_name: ODE
+project_longname: ODE (Orchestration Director Engine)
+project_description: >-
+    ODE executed business processes written following the
+    WS-BPEL standard.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+    keys:
+      - ODE2
+      - ODExSITE

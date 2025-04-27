@@ -1,0 +1,19 @@
+---
+retirement_date: 2016-06-15
+attic_issue: ATTIC-158
+attic_date: 2016-12-14
+attic_banner: false
+project_description: >-
+    Etch was a cross-platform, language- and transport-independent framework
+    for building and consuming network services.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA

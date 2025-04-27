@@ -1,0 +1,26 @@
+---
+retirement_date: 2009-11-18
+attic_date: 2010-01-01
+attic_banner: false
+project_description: >-
+    Beehive was a simple object model built on J2EE and Struts that used annotations
+    to reduce the amount of required code.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+related_projects_text: >-
+    If you are looking for a project to use in place of Beehive, the following have been suggested for its components:
+related_projects:
+    - description: Beehive NetUI / Page Flow - Struts 2 or Spring Web Flow
+    - description: Beehive Controls - Spring Beans
+    - description: Beehive WSM (web service metadata) - Axis2's implementation of JSR-181

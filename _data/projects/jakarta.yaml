@@ -1,0 +1,28 @@
+---
+retirement_date: 2011-12-21
+attic_issue: 
+attic_date: 2011-12-01
+attic_banner: false
+project_description: >-
+    Founded in 1999, the Jakarta Project housed a diverse set of popular
+    open source Java solutions.
+additional_text: >-
+    In December 2011, Jakarta was retired as all of its subprojects had
+    either become their own projects or been retired.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - announcements
+    - general
+    - site-cvs
+    - notifications
+wiki:
+    type: CWIKI
+related_projects:
+    - name: Jakarta EE
+      url: https://jakarta.ee/
+      description: is a project under the Eclipse Foundation, named in February 2018

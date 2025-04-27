@@ -1,0 +1,20 @@
+---
+retirement_date: 2011-11-16
+attic_issue: ATTIC-122
+attic_date: 2012-08-22
+attic_banner: false
+project_description: >-
+    Harmony was a modular Java runtime with class libraries and associated tools.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - alerts
+    - commits
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

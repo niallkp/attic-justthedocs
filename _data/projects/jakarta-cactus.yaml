@@ -1,0 +1,25 @@
+---
+retirement_date: 2011-08-01
+attic_date: 2011-08-01
+attic_banner: false
+project_name: Jakarta Cactus
+project_domain: jakarta.apache.org/cactus/
+project_description: >-
+    Jakarta previously hosted Cactus, a simple test framework for unit testing server-side java code.
+additional_text: >-
+    Cactus users are encouraged to switch to other techniques for testing.
+board_resolution: false
+board_reports: false
+downloads: true
+archive_path: jakarta/cactus
+source_repositories:
+    - type: Subversion
+      path: jakarta/cactus
+mailing_lists:
+    - dev
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+      - CACTUS
+

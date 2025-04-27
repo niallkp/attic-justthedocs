@@ -1,0 +1,30 @@
+---
+retirement_date: 2012-04-18
+attic_issue: ATTIC-146
+attic_date: 2012-04-01
+attic_banner: false
+project_name: XML
+project_description: >-
+    Founded in 1999, the Apache XML Project housed a diverse set of popular
+    open source XML solutions.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - bugs
+    - announcements
+    - general
+    - general-cvs
+
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+    keys:
+        - XMLBEANS
+        - XMLGRAPHICS
+        - XMLGRAPHICSBATIK
+        - XMLGRAPHICSFOP
+

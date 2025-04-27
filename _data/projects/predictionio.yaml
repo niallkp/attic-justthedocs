@@ -1,0 +1,28 @@
+---
+retirement_date: 2020-09-16
+attic_issue: ATTIC-187
+attic_date: 2021-04-10
+attic_banner: true
+project_name: PredictionIO
+project_description: >-
+    PredictionIO was a machine learning server built on top of state-of-the-art
+    open source stack, that enables developers to manage and deploy
+    production-ready predictive services for various kinds of machine learning
+    tasks.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - PIO
+wiki:
+    type: CWIKI
+    keys:
+        - PIO

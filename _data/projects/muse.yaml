@@ -1,0 +1,25 @@
+---
+retirement_date: 2013-01-01
+attic_issue: ATTIC-123
+attic_date: 2014-05-16
+attic_banner: false
+project_name: WS Muse
+project_domain: ws.apache.org
+project_description: >-
+    Muse was a Java-based implementation of the WS-ResourceFramework (WSRF),
+    WS-BaseNotification (WSN), and WS-DistributedManagement (WSDM) specifications.
+additional_tex: >-
+    The website appears to have been removed.
+board_resolution: false
+board_reports: false
+downloads: true
+archive_path: ws/muse
+mailing_lists:
+    - muse-dev
+    - muse-commits
+    - muse-user
+mailing_lists_prefix: ws
+related_projects:
+    - name: amused
+      url: https://52north.org/communities/sensorweb/amused/
+      description: is a fork of Muse

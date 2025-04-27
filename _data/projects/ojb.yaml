@@ -1,0 +1,37 @@
+---
+retirement_date: 2011-01-01
+attic_issue: ATTIC-113
+attic_date: 2011-06-28
+attic_banner: false
+project_name: ObJectRelationalBridge (OJB)
+project_domain: db.apache.org/ojb
+project_description: >-
+    OJB was an Object/Relational mapping tool that allowed transparent
+    persistence for Java Objects against relational databases.
+board_resolution: false
+board_reports: false
+downloads: true
+archive_path: db/ojb
+source_repositories:
+    - type: Subversion
+      path: db/ojb
+mailing_lists:
+    - ojb-dev
+    - ojb-user
+mailing_lists_prefix: db
+issue_tracker:
+    type: JIRA
+related_projects_text: >-
+    If you are looking for a project to use in place of OJB, implementations
+    of the standards Java Data Objects (JDO) and Java Persistence API (JPA)
+    may be good starting points. The Apache Software Foundation hosts the
+    following alternatives:
+related_projects:
+    - name: Apache Cayenne
+      url: https://cayenne.apache.org/
+    - name: Apache Empire-db
+      url: https://empire-db.apache.org/
+    - name: Apache OpenJPA
+      url: https://openjpa.apache.org/
+    - name: Apache Torque
+      url: https://db.apache.org/torque

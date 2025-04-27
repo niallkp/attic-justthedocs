@@ -1,0 +1,22 @@
+---
+retirement_date: 2022-07-20
+attic_issue: ATTIC-208
+attic_date: 2022-08-26
+attic_banner: true
+project_description: >-
+    Apache Buildr mission was to create a simple and intuitive build
+    system for Java applications.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - ci
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

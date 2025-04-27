@@ -1,0 +1,23 @@
+---
+retirement_date: 2010-12-15
+attic_issue: ATTIC-97
+attic_date: 2011-03-04
+attic_banner: false
+project_description: >-
+    Apache Excalibur was a Java Inversion of Control container.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - scm
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - EXLBR
+        - FORTRESS
+wiki:
+    type: CWIKI

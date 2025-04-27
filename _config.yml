@@ -1,8 +1,40 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Apache Attic
+description: >- 
+    The Apache Attic was created in November 2008 to provide process and solutions
+    to make it clear when an Apache project has reached its end of life.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://attic.apache.org/
+
+color_scheme: light
+
+#heading_anchors: true
+
+nav_enabled: true
+aux_links_new_tab: false
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  The Team:
+    - https://projects.apache.org/committee.html?attic
+  Board Minutes:
+    - https://whimsy.apache.org/board/minutes/Attic.html
+  License:
+    - https://www.apache.org/licenses/
+  Security:
+    - https://www.apache.org/security/
+  Privacy Policy:
+    - https://privacy.apache.org/policies/privacy-policy-public.html
+
+nav_external_links:
+    - title: Just the Docs
+      url: https://just-the-docs.github.io/just-the-docs/
+    - title: Foundation 
+      url: https://apache.org/
+    - title: Donate
+      url: https://apache.org/foundation/sponsorship.html
+    - title: Thanks 
+      url: https://apache.org/foundation/sponsors/
+    - title: Conference 
+      url: https://communityovercode.org/
+    - title: Events
+      url: https://events.apache.org/

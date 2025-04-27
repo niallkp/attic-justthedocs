@@ -1,0 +1,23 @@
+---
+retirement_date: 2017-04-19
+attic_issue: ATTIC-166
+attic_date: 2017-05-01
+attic_banner: false
+project_description: >-
+    Wink was a simple yet solid framework for building RESTful Web services.
+    It is comprised of a Server module and a Client module for developing
+    and consuming RESTful Web services.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

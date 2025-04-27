@@ -1,0 +1,2 @@
+{%- assign default_domain   = page.project_id | append: ".apache.org" -%}
+{{ page.project_domain | default: default_domain }}

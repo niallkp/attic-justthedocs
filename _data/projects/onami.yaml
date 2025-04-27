@@ -1,0 +1,20 @@
+---
+retirement_date: 2016-01-20
+attic_issue: ATTIC-147
+attic_date: 2016-02-27
+attic_banner: false
+project_description: >-
+    Onami was a project focused on the development and maintenance of a set
+    of Google Guice extensions not provided out of the box by the library itself.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA

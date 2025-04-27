@@ -1,0 +1,23 @@
+---
+retirement_date: 2018-06-20
+attic_issue: ATTIC-171
+attic_date: 2019-11-17
+attic_banner: true
+project_description: >-
+    The Lucy search engine library provides full-text search for dynamic
+    programming languages. It is a "loose C" port of the Apache Lucene
+    search engine library for Java.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

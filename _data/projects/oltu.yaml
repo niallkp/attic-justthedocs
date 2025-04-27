@@ -1,0 +1,26 @@
+---
+retirement_date: 2018-03-21
+attic_issue: ATTIC-168
+attic_date: 2018-07-11
+attic_banner: true
+project_description: >-
+    Apache Oltu is an OAuth protocol implementation in Java. It also covers
+    others "OAuth family" related implementations such as JWT, JWS and OpenID Connect
+additional_text: >-
+    Originally known as Amber.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+    keys:
+        - OLTU
+        - AMBER

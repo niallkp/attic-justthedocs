@@ -1,0 +1,23 @@
+---
+retirement_date: 2021-06-16
+attic_issue: ATTIC-198
+attic_date: 2021-07-10
+attic_banner: true
+project_name: MetaModel
+project_description: >-
+    MetaModel mission was common interface for discovery, exploration of
+    metadata and querying of different types of data sources.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

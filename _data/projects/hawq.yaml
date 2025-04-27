@@ -1,0 +1,24 @@
+---
+retirement_date: 2024-07-17
+attic_issue: ATTIC-223
+attic_date: 2024-07-28
+attic_banner: true
+project_name: HAWQ
+project_description: >-
+    HAWQ mission was a Hadoop native SQL query engine that combined the key
+    technological advantages of an MPP database with the scalability and
+    convenience of Hadoop.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

@@ -1,0 +1,20 @@
+---
+retirement_date: 2010-08-01
+attic_date: 2010-08-01
+attic_banner: false
+project_description: >-
+    Crimson was a Java XML parser which supports XML 1.0 via various APIs.
+project_domain: xml.apache.org/crimson
+additional_text: >-
+    There was no issue tracker nor mailing lists for the project.
+    Contact general@xml.apache.org or general@attic.apache.org for more information.
+board_resolution: false
+board_reports: false
+downloads: false
+related_projects:
+    - name: Apache Xerces
+      url: https://xerces.apache.org/
+      description: replaced Crimson.
+    - name: Download Xerces
+      url: https://archive.apache.org/dist/xerces/
+      description: from the Apache archives.

@@ -1,0 +1,22 @@
+---
+retirement_date: 2025-03-19
+attic_issue: ATTIC-236
+attic_date:
+attic_banner: true
+project_description: >-
+    Apache Gora was an ORM framework for column stores such as Apache HBase
+    and Apache Cassandra with a specific focus on Hadoop.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

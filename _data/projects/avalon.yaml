@@ -1,0 +1,23 @@
+---
+retirement_date: 2004-11-14
+attic_issue: ATTIC-112
+attic_date: 2011-05-26 # Attic site updated to grandfather Avalon in.
+attic_banner: false
+project_description: >-
+    Apache Avalon was closed down in 2004, long before the creation
+    of the Apache Attic. It's mentioned here for completeness.
+additional_text: >-
+    For more information, including its successors, archives and description;
+    see the website at http://avalon.apache.org.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - apps-dev
+    - cvs
+    - phoenix-dev
+wiki:
+    type: CWIKI

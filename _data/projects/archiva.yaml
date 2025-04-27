@@ -1,0 +1,25 @@
+---
+retirement_date: 2024-02-21
+attic_issue: ATTIC-221
+attic_date: 2024-05-06
+attic_banner: true
+project_description: >-
+
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - notifications
+    - users
+issue_tracker:
+    type: JIRA
+    keys:
+        - MRM
+wiki:
+    type: CWIKI
+

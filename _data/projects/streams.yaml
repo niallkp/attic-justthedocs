@@ -1,0 +1,23 @@
+---
+retirement_date: 2024-10-16
+attic_issue: ATTIC-226
+attic_date: 2025-01-14
+attic_banner: true
+project_description: >-
+    Streams mission was to unify a diverse world of digital profiles and online
+    activities into common formats and vocabularies, and makes these datasets
+    accessible across a variety of databases, devices, and platforms for
+    streaming, browsing, searching, sharing, and analytics use-cases.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

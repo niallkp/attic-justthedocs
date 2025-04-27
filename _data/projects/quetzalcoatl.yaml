@@ -1,0 +1,26 @@
+---
+retirement_date: 2010-06-16
+attic_date: 2010-06-01
+attic_banner: false
+project_domain: quetz.apache.org
+project_description: >-
+     Quetzalcoatl, or Quetz as it was more commonly known, was a project charged
+     with the creation and maintenance of open-source software related to mod_python
+     and the Python programming language. Mainly formed around the mod_python
+     subproject, it didn't have activity in the mod_python community to drive the
+     larger project along.
+board_resolution: true
+board_reports: true
+downloads: false
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+mailing_lists_prefix: quetz-mod_python
+related_projects_text: >-
+    The mod_python website and downloads remain open.
+related_projects:
+    - name: See modpython.org
+      url: http://www.modpython.org
+      description: for more information on mod_python. Quetz itself never had a website.

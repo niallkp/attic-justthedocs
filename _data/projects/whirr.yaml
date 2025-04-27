@@ -1,0 +1,21 @@
+---
+retirement_date: 2015-03-18
+attic_issue: ATTIC-135
+attic_date: 2015-07-16
+attic_banner: false
+project_description: >-
+    Whirr was a set of libraries for running cloud services and deploying clusters.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

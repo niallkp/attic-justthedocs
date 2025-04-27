@@ -1,0 +1,20 @@
+---
+retirement_date: 2023-09-20
+attic_issue: ATTIC-217
+attic_date: 2024-02-17
+attic_banner: true
+project_description: >-
+    Giraph was an iterative graph processing system built for high scalability.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

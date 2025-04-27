@@ -1,0 +1,18 @@
+---
+retirement_date: 2020-04-15
+attic_issue: ATTIC-182
+attic_date: 2021-04-05
+attic_banner: true
+project_description: >-
+    Stanbol was a set of reusable components for semantic content management.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+issue_tracker:
+    type: JIRA
+

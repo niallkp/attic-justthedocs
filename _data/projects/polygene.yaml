@@ -1,0 +1,20 @@
+---
+retirement_date: 2018-12-19
+attic_issue: ATTIC-174
+attic_date: 2019-04-10
+attic_banner: true
+project_description: >-
+    Polygene is a community based effort exploring Composite Oriented Programming
+    for domain centric application development.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+

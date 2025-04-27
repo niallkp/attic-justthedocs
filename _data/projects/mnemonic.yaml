@@ -1,0 +1,20 @@
+---
+retirement_date: 2025-02-19
+attic_issue: ATTIC-233
+attic_date:
+attic_banner: true
+project_description: >-
+    Mnemonic was a transparent nonvolatile hybrid memory oriented
+    library for Big data, High-performance computing, and Analytics.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

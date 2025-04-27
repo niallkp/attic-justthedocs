@@ -1,0 +1,22 @@
+---
+retirement_date: 2023-06-21
+attic_issue: ATTIC-215
+attic_date: 2023-10-05
+attic_banner: true 
+project_description: >-
+    The mission of Apache Any23 (Anything to Triples) was the creation and
+    maintenance of software related to automatic crawling, parsing, analyzing,
+    producing, validating and converting RDF (Resource Description Framework) data.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

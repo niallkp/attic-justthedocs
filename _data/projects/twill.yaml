@@ -1,0 +1,20 @@
+---
+retirement_date: 2020-05-20
+attic_issue: ATTIC-184
+attic_date: 2021-04-10
+attic_banner: true
+project_description: >-
+    Twill mission was to use Apache Hadoop YARN's distributed capabilities
+    with a programming model that is similar to running threads.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

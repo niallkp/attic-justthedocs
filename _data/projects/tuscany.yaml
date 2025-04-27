@@ -1,0 +1,29 @@
+---
+retirement_date: 2016-05-18
+attic_issue: ATTIC-156
+attic_date: 2016-08-03
+attic_banner: false
+project_description: >-
+    Tuscany simplified the task of developing service-oriented architectured
+    solutions by providing a comprehensive infrastructure for development and
+    management, based on the Service Component Architecture standard.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+    - notification
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+    keys:
+        - TUSCANY
+        - TUSCANYWIKI
+        - TUSCANYxDOCx1x
+        - TUSCANYxDOCx2x

@@ -1,0 +1,133 @@
+---
+retirement_date: 2010-04-21
+attic_issue: ATTIC-93
+attic_date: 2010-09-05
+attic_banner: false
+project_name: Jakarta Taglibs
+project_domain: tomcat.apache.org/taglibs
+project_description: >-
+    Starting in 2000, Jakarta hosted the Jakarta Taglibs project, a large
+    collection of JSP Tag Libraries. They ranged from simple utility libraries
+    and UI libraries, to Dreamweaver extensions and an implementation of the
+    JSP Standard Tag Library (JSTL) specification.
+additional_text: >-
+    With the advent of JSTL, the core features of many of the libraries had
+    been standardized and the need for these libraries diminished. As such,
+    much of the Taglibs codebase moved into maintenance mode.
+board_resolution: true
+board_reports: false
+downloads: true
+archive_path: jakarta/taglibs
+source_repositories:
+    - type: Subversion
+      path: jakarta/taglibs
+mailing_lists:
+    - dev
+issue_tracker:
+    type: Bugzilla
+    keys:
+        - taglibs
+wiki:
+    type: CWIKI
+    keys:
+        - JAKARTATAGLIBS
+related_projects_text: >-
+    In 2008 and 2009, the majority of these libraries were deprecated and have now been retired.
+    The remaining work has moved over to the Tomcat Taglibs project:
+related_projects:
+    - name: Tomcat Taglibs
+      url: https://tomcat.apache.org/taglibs/
+      description: Standard - The implementations of the various JSTL specifications
+    - name: RDC
+      url: https://tomcat.apache.org/taglibs/rdc/
+      description: Reusable Dialog Components Taglib (retired from the Tomcat Taglibs project in 2014)
+    - name: Mailer 2
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/mailer2/trunk/
+      description: JSP Version 2.0+
+    - name: Cache
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/cache/trunk/
+      description: JSP Version 1.2+
+    - name: Data Grid
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/datagrid/trunk/
+      description: JSP Version 1.2+
+    - name: Application
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/application/trunk/
+      description: JSP Version 1.1+
+    - name: Benchmark
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/benchmark/trunk/
+      description: JSP Version 1.1+
+    - name: BSF
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/bsf/trunk/
+      description: JSP Version 1.1+
+    - name: DateTime
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/datetime/trunk/
+      description: JSP Version 1.1+
+    - name: DBTags
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/dbtags/trunk/
+      description: JSP Version 1.1+
+    - name: I18N
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/i18n/trunk/
+      description: JSP Version 1.1+
+    - name: Image
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/image/trunk/
+      description: JSP Version 1.1+
+    - name: Input
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/input/trunk/
+      description: JSP Version 1.1+
+    - name: IO
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/io/trunk/
+      description: JSP Version 1.1+
+    - name: Iterators
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/sandbox/iterators/trunk/
+      description: JSP Version 1.2+
+    - name: JNDI
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/proper/jndi/trunk/
+      description: JSP Version 1.1+
+    - name: JMS
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/jmstags/trunk/
+      description: JSP Version 1.1+
+    - name: Log
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/proper/log/trunk/
+      description: JSP Version 1.1+
+    - name: Mailer
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/mailer/trunk/
+      description: JSP Version 1.1+
+    - name: Page
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/page/trunk/
+      description: JSP Version 1.1+
+    - name: Random
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/random/trunk/
+      description: JSP Version 1.1+
+    - name: Regexp
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/proper/regexp/trunk/
+      description: JSP Version 1.1+
+    - name: Request
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/request/trunk/
+      description: JSP Version 1.1+
+    - name: Response
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/response/trunk/
+      description: JSP Version 1.1+
+    - name: Scrape
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/scrape/trunk/
+      description: JSP Version 1.1+
+    - name: Session
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/session/trunk/
+      description: JSP Version 1.1+
+    - name: String
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/proper/string/trunk/
+      description: JSP Version 1.1+
+    - name: UltraDev 4.0 Tool Extension
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/tools/trunk/UltraDev/4.0/ctlx/
+      description: JSP Version 1.1+
+    - name: Unstandard
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/sandbox/unstandard/trunk/
+      description: JSP Version 1.2+
+    - name: Utility
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/utility/trunk/
+      description: JSP Version 1.1+
+    - name: XSL
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xsl/trunk/
+      description: JSP Version 1.1+
+    - name: XTags
+      url: https://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xtags/trunk/
+      description: JSP Version 1.1+

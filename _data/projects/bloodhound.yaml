@@ -1,0 +1,19 @@
+---
+retirement_date: 2024-07-17
+attic_issue: ATTIC-224
+attic_date: 2024-07-28
+attic_banner: true
+project_description: >-
+    Apache Bloodhound mission was to develop an issue tracking, wiki and
+    repository browser.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA

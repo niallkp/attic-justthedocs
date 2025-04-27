@@ -1,0 +1,30 @@
+---
+retirement_date: 2010-06-16
+attic_issue: ATTIC-66
+attic_date: 2010-07-24
+attic_banner: false
+project_name: iBATIS
+project_description: >-
+    iBATIS was a data mapper framework that made it easier to use a relational
+    database with object-oriented applications. There were both Java and .Net
+    implementations.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user-cs
+    - user-java
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+related_projects_text: >-
+    The iBATIS committers moved over to MyBatis which is the natural successor to iBATIS.
+related_projects:
+    - name: MyBatis
+      url: https://www.mybatis.org/
+      description: is a fork of iBATIS

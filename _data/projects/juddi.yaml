@@ -1,0 +1,25 @@
+---
+retirement_date: 2023-02-15
+attic_issue: ATTIC-213
+attic_date: 2023-03-04
+attic_banner: true
+project_name: jUDDI
+project_description: >-
+    Apache jUDDI mission was Java implementation of the Universal Description,
+    Discovery, and Integration specification.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - JUDDI
+        - SCOUT
+wiki:
+    type: CWIKI

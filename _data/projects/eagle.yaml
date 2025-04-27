@@ -1,0 +1,24 @@
+---
+retirement_date: 2020-11-18
+attic_issue: ATTIC-193
+attic_date: 2021-04-11
+attic_banner: true
+project_description: >-
+    Apache Eagle was an open source analytics solution for identifying security
+    and performance issues instantly on big data platforms.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - issues
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+    keys:
+        - EAG

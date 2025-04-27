@@ -1,0 +1,21 @@
+---
+retirement_date: 2015-07-15
+attic_issue: ATTIC-141
+attic_date: 2015-08-23
+attic_banner: false
+project_name: DirectMemory
+project_description: >-
+    DirectMemory was an off-heap cache for the Java Virtual Machine.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

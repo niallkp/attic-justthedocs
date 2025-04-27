@@ -1,0 +1,22 @@
+---
+retirement_date: 2016-01-20
+attic_issue: ATTIC-148
+attic_date: 2016-02-28
+attic_banner: false
+project_description: >-
+    Rave was a web and social mashup engine that aggregated and served web widgets.
+    It was targeted as an engine for internet and intranet portals.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

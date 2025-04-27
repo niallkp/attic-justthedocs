@@ -1,0 +1,24 @@
+---
+retirement_date: 2025-01-15
+attic_issue: ATTIC-227
+attic_date: 2025-03-23
+attic_banner: true
+project_description: >-
+    Apache Cocoon mission was Web development framework: separation of
+    concerns, component-based.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+    keys:
+        - COCOON
+        - COCOON3
+wiki:
+    type: CWIKI

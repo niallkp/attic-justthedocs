@@ -1,0 +1,29 @@
+---
+retirement_date: 2010-04-21
+attic_issue: ATTIC-94
+attic_date: 2010-10-28
+attic_banner: false
+project_name: Jakarta Slide
+project_domain: jakarta.apache.org/slide
+project_description: >-
+    Jakarta previously hosted Slide, a content repository which could serve as
+    a basis for a content management system as well as other purposes. Among
+    its features was full WebDAV support.
+board_resolution: true
+board_reports: false
+downloads: true
+archive_path: jakarta/slide
+source_repositories:
+    - type: Subversion
+      path: jakarta/slide
+mailing_lists:
+    - dev
+    - user
+issue_tracker:
+    type: Bugzilla
+    keys:
+        - slide
+wiki:
+    type: CWIKI
+    keys:
+        - JAKARTASLIDE

@@ -1,0 +1,20 @@
+---
+retirement_date: 2022-02-16
+attic_issue: ATTIC-204
+attic_date: 2022-04-13
+attic_banner: true
+project_description: >-
+    River's mission was the creation and maintenance of software related to
+    Jini service oriented architecture.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Subversion
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA

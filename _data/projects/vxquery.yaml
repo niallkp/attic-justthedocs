@@ -1,0 +1,20 @@
+---
+retirement_date: 2020-01-15
+attic_issue: ATTIC-178
+attic_date: 2021-04-05
+attic_banner: true
+project_name: VXQuery
+project_description: >-
+    VXQuery implemented a parallel XML Query processor.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI

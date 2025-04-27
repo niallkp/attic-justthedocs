@@ -1,0 +1,23 @@
+---
+retirement_date: 2011-04-20
+attic_issue: ATTIC-117
+attic_date: 2011-08-06
+attic_banner: false
+project_name: Jakarta Regexp
+project_domain: jakarta.apache.org/regexp
+project_description: >-
+    Jakarta previously hosted Regexp, a 100% Pure Java Regular Expression package.
+board_resolution: true
+board_reports: false
+downloads: true
+archive_path: jakarta/regexp
+source_repositories:
+    - type: Subversion
+      path: jakarta/regexp
+mailing_lists:
+    - dev
+    - user
+issue_tracker:
+    type: Bugzilla
+    keys:
+        - regexp
