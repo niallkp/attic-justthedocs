@@ -4,6 +4,10 @@ title: Resolution
 #nav_exclude: true
 parent: Process
 ---
+
+# Board Resolution to move to the Attic
+***
+
 The following is a sample resolution to move a project to the Apache Attic.
 A project's chair should include this in the agenda for the next board meeting:
 

@@ -3,14 +3,39 @@ layout: home
 title: The Apache Attic
 nav_order: 1
 ---
+
+***PREVIEW COLOUR SCHEMES:*** <button class="btn js-toggle-dark-mode">Dark Scheme</button> <button class="btn js-toggle-light-mode">Light Scheme</button> <button class="btn js-toggle-attic-mode">Attic Scheme</button>
+
+[JustTheDocs](https://just-the-docs.github.io/just-the-docs/docs/configuration/#color-scheme) comes with **Light** and **Dark** schemes - a custom **Attic** scheme has been added.
+
+***
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  jtd.setTheme('dark');
+});
+const toggleLightMode = document.querySelector('.js-toggle-light-mode');
+jtd.addEvent(toggleLightMode, 'click', function(){
+  jtd.setTheme('light');
+});
+const toggleAtticMode = document.querySelector('.js-toggle-attic-mode');
+jtd.addEvent(toggleAtticMode, 'click', function(){
+  jtd.setTheme('attic');
+});
+</script>
+
+# The Apache Attic
+***
+
 The Apache Attic was created in
 [November 2008](https://www.apache.org/foundation/records/minutes/2008/board_minutes_2008_11_19.txt)
 to provide process and solutions to make it clear when an Apache project has reached its
-end of life. Specifically:
+end of life. Specifically, the Apache Attic Project:
+
 
 ```
-the Apache Attic Project [...] is responsible for the oversight of projects which otherwise would not have oversight;
-the Apache Attic Project [...] is not authorized to actively develop and release the projects under its oversight
+[...] is responsible for the oversight of projects which otherwise would not have oversight;
+[...] is not authorized to actively develop and release the projects under its oversight
 ```
 
 It is intended to:

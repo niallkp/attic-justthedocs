@@ -1,8 +1,11 @@
 ---
 layout: page
 title: Process
+has_toc: false
 nav_order: 2
 ---
+# Moving a PMC to the Attic
+***
 
 At some point a PMC may want to join the Attic. The following defines a process
 to move that PMC into the Attic and gently close it down.
@@ -48,7 +51,7 @@ The following are useful Git/svn/https locations:
   - websites [svnpubsub](https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf) and
     [infra-reports#sitesource](https://infra-reports.apache.org/#sitesource)
   
-#### How to: 1. Confirm Board Resolution
+### How to: 1. Confirm Board Resolution
 
 Check previous Board minutes to confirm the "terminate" resolution passed. The minutes are available from the following sources:
 
@@ -67,12 +70,13 @@ This automatically removes VP entry on [https://www.apache.org/foundation/leader
 ([src](https://github.com/apache/www-site/blob/main/content/index.ezmd#L304)): see [www-site](https://github.com/apache/www-site)
 and its rendered HTML in [asf-site](https://github.com/apache/www-site/tree/asf-site) branch.
 
-#### How to: 2. Inform users of the move to the Attic
+### How to: 2. Inform users of the move to the Attic
 
 Let the users know that the PMC is moving into the Attic. Use the following template:
 
+```
 {% include user-email-template.html name="${project}" attic_issue="ATTIC-${#}" %}
-  
+```
 
 Remember to [subscribe](https://www.apache.org/foundation/mailinglists.html) to the user
 list: use [Whimsy Mailing List Self-subscription](https://whimsy.apache.org/committers/subscribe)
@@ -82,7 +86,7 @@ Also bear in mind that the user mailing list may already know and you can skip t
 or you can get help from project having asked to move to the Attic. Make sure you read that 
 thread if it does exist.
 
-#### How to: 3. Create project page on Attic site: https://attic.apache.org/projects/${project}.html
+### How to: 3. Create project page on Attic site: https://attic.apache.org/projects/${project}.html
 
 The Attic website is built using Anakia. [Anakia](https://velocity.apache.org/anakia/) is
 an old site technology built on top of Apache Velocity. You can get the source for the site
@@ -112,7 +116,7 @@ It should be deleted after use, and not committed to SVN.
 The [buildbot job](https://ci2.apache.org/#/builders/16) will build the site
 and commit the result which will be published soon after.
 
-#### How to: 4. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
+### How to: 4. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
 
 The files referenced are in [https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk]
 (https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk), which every Apache committer can update.
@@ -128,7 +132,7 @@ new category:  <category rdf:resource="http://projects.apache.org/category/retir
 You can use `script/project2attic.py` to prepare the update that you'll just need to
 review and commit
 
-#### How to: 5. Get infra lock down project's resources
+### How to: 5. Get infra lock down project's resources
 
 Open an [Infrastructure JIRA](https://issues.apache.org/jira/browse/INFRA) issue identifying
 the resources that need turning off/making read only.
@@ -147,7 +151,7 @@ Typically, it contains steps like following, that need to be tweaked based on as
   - Delete LDAP group(s)
   - Turn off automated builds
 
-#### How to: 6. Announce on announce@apache.org
+### How to: 6. Announce on announce@apache.org
 
 Announce that the project [is now retired](https://lists.apache.org/list?announce@apache.org:lte=1M:%22is%20now%20retired%22).
 Consider the following template.
@@ -156,7 +160,8 @@ Sometimes, the user mailing list will not be shut down. If that is the case,
 it should be mentioned in the announce. e.g. add "The user mailing list remains open."
 after "change in url." below.
 
+```
 {% include announce-email-template.html project_id="${project}" name="${project}" longname="${project}" description="${project} was {boilerplate}" %}
-
+```
 
 It's important to include the boilerplate from the project's site so people know what we're talking about.

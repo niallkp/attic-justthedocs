@@ -21,14 +21,15 @@ layout: page
 Return to the <a href="{% link projects/{{ page.project_id }}.html %}">{{project_name}} summary</a>
 </p>
 
-<h4 id="attic-jira">Attic JIRA Template</h4>
+<h2 id="attic-jira">Attic JIRA Template</h2>
 
 <p>
 Use the markup below to create an Attic JIRA for the project's move to the Attic:
 </p>
 
-<pre>
-{%- if page.board_resolution == true %}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>
+{%- if page.board_resolution == true -%}
 # Confirm [Board Resolution|{{ resolution_locn }}] (!)
 {%- else %}
 # Confirm Board Resolution (!)
@@ -45,16 +46,17 @@ Use the markup below to create an Attic JIRA for the project's move to the Attic
 # Announce on [announce at apache.org|http://mail-archives.apache.org/mod_mbox/www-announce/] (!)
 
 See [http://attic.apache.org/process.html#howto] for detailed instructions
-</pre>
+</code>
+</pre></div></div>
 
-<h4 id="infra-jira">Infra JIRA Template</h4>
+<h2 id="infra-jira">Infra JIRA Template</h2>
 
 <p>
 Use the text below to create an Infra JIRA for the project's move to the Attic:
 </p>
 
-<pre>
-The {{ project_name }} project has retired.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>The {{ project_name }} project has retired.
 The following resources were detected for archive/removal please:
 
 Remove the distribution SVN developer directory:
@@ -127,22 +129,30 @@ Mailing lists https://lists.apache.org/list.html?{{ page.project_id }}.apache.or
 Remove the LDAP project group: dn: cn={{ page.project_id }},ou=project,ou=groups,dc=apache,dc=org
 
 Turn off any automated builds
-</pre>
+</code>
+</pre></div></div>
 
-<h4 id="user-email">User Email Template</h4>
+<h2 id="user-email">User Email Template</h2>
 
 <p>
 Let the users know that the PMC is moving into the Attic. Use the following text:
 </p>
 
-{% include user-email-template.html name=project_name attic_issue=page.attic_issue %}
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>
+{%- include user-email-template.html name=project_name attic_issue=page.attic_issue %}
+</code>
+</pre></div></div>
 
-<h4 id="announcement">Announcement Email Template</h4>
+<h2 id="announcement">Announcement Email Template</h2>
 
 <p>
 Consider the following template when announcing that the project is now retired:
 </p>
 
-{% include announce-email-template.html project_id=page.project_id name=project_name longname=project_longname description=page.project_description %}
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
+<code>
+{%- include announce-email-template.html project_id=page.project_id name=project_name longname=project_longname description=page.project_description %}
+</code>
+</pre></div></div>
 

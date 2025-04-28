@@ -37,7 +37,17 @@ module ProjectDataPlugin
         project['project_id'] = projectId
         project['project_name'] =  project.fetch("project_name", projectId.capitalize())
         project['project_longname'] = project.fetch("project_longname", project['project_name'] )
+        project['project_apachename'] = "Apache " + project["project_longname"]
         project['project_domain'] =  project.fetch("project_domain", projectId + ".apache.org")
+        if project['attic_issue']
+          project['attic_issue_link'] =  "https://issues.apache.org/jira/browse/" + project['attic_issue']
+        end
+        shortdesc = project['project_description']
+        idx = shortdesc.index('.')
+        if idx and idx > 0
+          shortdesc = shortdesc.slice(0, idx + 1)
+        end
+        project['project_shortdesc'] =  shortdesc
         projects.push(project)
       end
 
