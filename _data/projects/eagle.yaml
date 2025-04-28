@@ -4,7 +4,7 @@ attic_issue: ATTIC-193
 attic_date: 2021-04-11
 attic_banner: true
 project_description: >-
-    Apache Eagle was an open source analytics solution for identifying security
+    Eagle was an open source analytics solution for identifying security
     and performance issues instantly on big data platforms.
 board_resolution: true
 board_reports: true

@@ -4,7 +4,11 @@ attic_issue: ATTIC-167
 attic_date: 2018-02-06
 attic_banner: true
 project_description: >-
-
+    ACE was a software distribution framework that allows you to centrally
+    manage and distribute software components, configuration data and other
+    artifacts to target systems. It is built using OSGi and can be deployed
+    in different topologies. The target systems are usually also OSGi based,
+    but don't have to be.
 board_resolution: true
 board_reports: true
 downloads: true

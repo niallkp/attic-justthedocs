@@ -4,7 +4,7 @@ attic_issue: ATTIC-180
 attic_date: 2021-04-05
 attic_banner: true
 project_description: >-
-    pache Forrest was software for generation of aggregated multi-channel
+    Forrest was software for generation of aggregated multi-channel
     documentation maintaining a separation of content and presentation.
 board_resolution: true
 board_reports: true

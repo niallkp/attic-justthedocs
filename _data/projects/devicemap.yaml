@@ -5,7 +5,7 @@ attic_date: 2017-01-06
 attic_banner: false
 project_name: DeviceMap
 project_description: >-
-    Apache DeviceMap was a project to create a data repository containing
+    DeviceMap was a project to create a data repository containing
     device information, images and other relevant information for all
     sorts of mobile devices.
 board_resolution: true

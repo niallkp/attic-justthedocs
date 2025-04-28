@@ -5,7 +5,7 @@ attic_date: 2024-05-03
 attic_banner: true
 project_name: Bahir
 project_description: >-
-    Apache Bahir's mission was to provide extensions to distributed analytic
+    Bahir's mission was to provide extensions to distributed analytic
     platforms such as Apache Spark.
 board_resolution: true
 board_reports: true

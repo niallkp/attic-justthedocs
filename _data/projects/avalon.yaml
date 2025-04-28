@@ -4,7 +4,7 @@ attic_issue: ATTIC-112
 attic_date: 2011-05-26 # Attic site updated to grandfather Avalon in.
 attic_banner: false
 project_description: >-
-    Apache Avalon was closed down in 2004, long before the creation
+    Avalon was closed down in 2004, long before the creation
     of the Apache Attic. It's mentioned here for completeness.
 additional_text: >-
     For more information, including its successors, archives and description;

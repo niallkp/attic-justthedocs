@@ -4,7 +4,7 @@ attic_issue: ATTIC-227
 attic_date: 2025-03-23
 attic_banner: true
 project_description: >-
-    Apache Cocoon mission was Web development framework: separation of
+    Cocoon mission was Web development framework: separation of
     concerns, component-based.
 board_resolution: true
 board_reports: true

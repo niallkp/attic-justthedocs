@@ -4,7 +4,7 @@ attic_issue: ATTIC-168
 attic_date: 2018-07-11
 attic_banner: true
 project_description: >-
-    Apache Oltu is an OAuth protocol implementation in Java. It also covers
+    Oltu is an OAuth protocol implementation in Java. It also covers
     others "OAuth family" related implementations such as JWT, JWS and OpenID Connect
 additional_text: >-
     Originally known as Amber.

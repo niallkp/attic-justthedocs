@@ -4,7 +4,7 @@ attic_issue: ATTIC-176
 attic_date: 2021-04-01
 attic_banner: true
 project_description: >-
-    Apache Falcon was a data processing and management solution for Hadoop
+    Falcon was a data processing and management solution for Hadoop
     designed for data motion, coordination of data pipelines, lifecycle
     management, and data discovery. Falcon enabled end consumers to quickly
     onboard their data and its associated processing and management tasks

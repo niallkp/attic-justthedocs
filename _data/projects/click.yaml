@@ -4,7 +4,7 @@ attic_issue: ATTIC-131
 attic_date: 2015-09-28
 attic_banner: false
 project_description: >-
-    Apache Click was a JEE web application framework, providing a natural
+    Click was a JEE web application framework, providing a natural
     rich client style programming model.
 board_resolution: true
 board_reports: true

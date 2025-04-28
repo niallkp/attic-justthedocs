@@ -5,7 +5,7 @@ attic_date: 2012-08-22
 attic_banner: false
 project_domain: xml.apache.org/xindice
 project_description: >-
-    Apache Xindice was a native XML database.
+    Xindice was a native XML database.
 board_resolution: false
 board_reports: false
 downloads: true
