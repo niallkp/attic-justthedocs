@@ -8,6 +8,7 @@ layout: page
 {%- assign resolution_file  = page.retirement_date | date: "%Y/board_minutes_%Y_%m_%d.txt" %}
 {%- assign resolution_locn  = resolution_file | prepend: "https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/records/minutes/" %}
 {%- assign git_repositories = site.data.git-repositories.projects[page.project_id].repositories %}
+{%- assign mlists            = site.data.committee-retired.retired[page.project_id].mlists %}
 
 <h1>Templates for {{project_name}} Retirement</h1>
 <ul>
@@ -65,14 +66,11 @@ Remove the distribution SVN release directory contents:
 - https://dist.apache.org/repos/dist/release/{{ page.project_id }}
 and set up redirection to https://attic.apache.org/projects/{{ page.project_id }}.html
 
-{% if page.mailing_lists -%}
-Mailing lists https://lists.apache.org/list.html?{{ page.project_id }}.apache.org :
-{%- for mail_list in page.mailing_lists %}
+{% if mlists -%}
+Mailing lists https://lists.apache.org/list.html?{{ page.project_id }}.apache.org:
+{%- for mail_list in mlists %}
 - {{ mail_list }}@{{ page.project_id }}.apache.org
 {%- endfor %}
-- private@{{ page.project_id }}.apache.org
-- security@{{ page.project_id }}.apache.org (if present)
-[TODO: Attic does not currently check for all private lists; this must be done manually]
 {%- endif %}
 
 {% if page.issue_tracker.type -%}

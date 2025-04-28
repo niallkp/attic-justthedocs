@@ -21,22 +21,30 @@
 module Setup
   require 'uri'
   require 'net/http'
-  REPOS = 'https://gitbox.apache.org/repositories.json'
-  DATA_FILE = '_data/git-repositories.json'
+
+# Hash: key: target file, value: source
+  CACHES = {
+    '_data/git-repositories.json' => 'https://gitbox.apache.org/repositories.json',
+    '_data/committee-retired.json' => 'https://whimsy.apache.org/public/committee-retired.json',    
+  }
+  
   AGE = 3600 # seconds => 1 hour
-  Jekyll::Hooks.register :site, :after_init do |site, payload|
-    begin
-      mtime = File.mtime(DATA_FILE)
-    rescue Errno::ENOENT
-      mtime = Time.gm(0)
-    end
-    if Time.now - mtime > AGE
-      puts "Setup: #{DATA_FILE} is old or missing"
-      uri = URI.parse(REPOS)
-      response = Net::HTTP.get_response uri
-      File.write(DATA_FILE, response.body)
-    else
-      puts "Setup: #{DATA_FILE} is recent"
+  
+  Jekyll::Hooks.register :site, :after_init do |site, _payload|
+    CACHES.each do |data_file, data_src|
+      begin
+        mtime = File.mtime(data_file)
+      rescue Errno::ENOENT
+        mtime = Time.gm(0)
+      end
+      if Time.now - mtime > AGE
+        puts "Setup: #{data_file} is old or missing"
+        uri = URI.parse(data_src)
+        response = Net::HTTP.get_response uri
+        File.write(data_file, response.body)
+      else
+        puts "Setup: #{data_file} is recent"
+      end
     end
   end
 end

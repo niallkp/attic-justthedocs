@@ -15,3 +15,4 @@ _site/
 vendor/
 # Ignore download git-repositories.json
 _data/git-repositories.json
+_data/committee-retired.json
