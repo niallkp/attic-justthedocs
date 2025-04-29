@@ -1,7 +1,7 @@
 {"0": {
     "doc": "Project Data",
     "title": "Project Data YAML Files",
-    "content": ". Much of the content on this website is generated from project data files in YAML Format. This page describe the contents of how the data files are used and the attributes in the files. See the Any23 Example below for an idea of what these files look like. | Summary | Data File Attributes (YAML) | Example YAML File | YAML Template File | . ",
+    "content": ". Much of the content on this website is generated from project data files in YAML Format. This page describe the contents of how the data files are used and the attributes in the files: . | How the Data Files are Used | Data File Attributes (YAML) | Example YAML File | YAML Template File | . ",
     "url": "/attic-justthedocs/data.html#project-data-yaml-files",
     
     "relUrl": "/data.html#project-data-yaml-files"
