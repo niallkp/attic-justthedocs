@@ -20,26 +20,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 {% endcomment %}
 
-***PREVIEW COLOUR SCHEMES:*** <button class="btn js-toggle-dark-mode">Dark Scheme</button> <button class="btn js-toggle-light-mode">Light Scheme</button> <button class="btn js-toggle-attic-mode">Attic Scheme</button>
-
-[JustTheDocs](https://just-the-docs.github.io/just-the-docs/docs/configuration/#color-scheme) comes with **Light** and **Dark** schemes - a custom **Attic** scheme has been added.
-
-***
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  jtd.setTheme('dark');
-});
-const toggleLightMode = document.querySelector('.js-toggle-light-mode');
-jtd.addEvent(toggleLightMode, 'click', function(){
-  jtd.setTheme('light');
-});
-const toggleAtticMode = document.querySelector('.js-toggle-attic-mode');
-jtd.addEvent(toggleAtticMode, 'click', function(){
-  jtd.setTheme('attic');
-});
-</script>
-
 # The Apache Attic
 ***
 
@@ -117,3 +97,32 @@ Not all projects ['graduate'](https://incubator.apache.org/cookbook/#graduation_
 out of the Incubator; some are retired instead. Those retired projects remain under Incubator
 oversight: the list may be found on the Incubator's
 [Projects page](https://incubator.apache.org/projects/index.html#retired).
+
+***
+### Preview Website Color Schemes
+
+[JustTheDocs](https://just-the-docs.github.io/just-the-docs/docs/configuration/#color-scheme)
+comes with **Light** and **Dark** schemes and this website uses a custom
+[Attic scheme]({{site.github.repository_url}}/blob/main/_sass/color_schemes/attic.scss),
+which extends the **Light** scheme.
+
+Click the buttons below to preview the different schemes:
+
+<button class="btn js-toggle-light-mode">Light Scheme</button>
+<button class="btn js-toggle-dark-mode">Dark Scheme</button>
+<button class="btn js-toggle-attic-mode">Attic Scheme</button>
+
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  jtd.setTheme('dark');
+});
+const toggleLightMode = document.querySelector('.js-toggle-light-mode');
+jtd.addEvent(toggleLightMode, 'click', function(){
+  jtd.setTheme('light');
+});
+const toggleAtticMode = document.querySelector('.js-toggle-attic-mode');
+jtd.addEvent(toggleAtticMode, 'click', function(){
+  jtd.setTheme('attic');
+});
+</script>
