@@ -2,7 +2,7 @@
 retirement_date: 2017-12-20
 attic_issue: ATTIC-167A
 attic_date: 2018-02-06
-attic_banner: true
+attic_banner: false
 project_description: >-
     TESTDUMMY is a dummy test project to check addition and removal
     It is not a real project...
@@ -20,5 +20,4 @@ issue_tracker:
 wiki:
     type: CWIKI
     keys:
-    - ABCD
-    - EFGH
+    - ABCDEFGH
