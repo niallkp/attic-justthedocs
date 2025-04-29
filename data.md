@@ -25,36 +25,11 @@ limitations under the License.
 # Project Data YAML Files
 ***
 
-The [Project Pages]({% link projects.md %}) on this website are all generated from `YAML` project data files.
+The [Project Pages]({% link projects.md %}) on this website are all generated from 
+[YAML project data files]({{site.repo}}/blob/main/_data/projects/).
 This page describe the contents of those files and what each attribute is used for.
 
-### Example YAML File
-Below is an example, of a [YAML file for Any23]({{site.repo}}/blob/main/_data/projects/any23.yaml)
-which generates the [Any23 Project Pages]({% link projects/any23.html %}).
-
-```yaml
-retirement_date: 2023-06-21
-attic_issue: ATTIC-215
-attic_date: 2023-10-01
-attic_banner: true 
-project_description: >-
-    The mission of Apache Any23 (Anything to Triples) was the creation and
-    maintenance of software related to automatic crawling, parsing, analyzing,
-    producing, validating and converting RDF (Resource Description Framework) data.
-board_resolution: true
-board_reports: true
-downloads: true
-source_repositories:
-    - type: Git
-mailing_lists:
-    - dev
-    - commits
-    - user
-issue_tracker:
-    type: JIRA
-wiki:
-    type: CWIKI
-```
+See the [Any23 Example below](#example-yaml-file) for an idea of what these files look like.
 
 ### YAML File Attributes
 
@@ -92,3 +67,32 @@ wiki:
 |related_projects: name|Optional|text|Name of the related project|
 |related_projects: url|Optional|url|URL of the related project|
 |related_projects: description|Required|text|Description of the related project|
+
+### Example YAML File
+Below is an example, of a [YAML file for Any23]({{site.repo}}/blob/main/_data/projects/any23.yaml)
+which generates the [Any23 Project Page]({% link projects/any23.html %}).
+
+```yaml
+retirement_date: 2023-06-21
+attic_issue: ATTIC-215
+attic_date: 2023-10-01
+attic_banner: true 
+project_description: >-
+    The mission of Apache Any23 (Anything to Triples) was the creation and
+    maintenance of software related to automatic crawling, parsing, analyzing,
+    producing, validating and converting RDF (Resource Description Framework) data.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+```
+
