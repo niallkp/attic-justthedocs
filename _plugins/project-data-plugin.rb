@@ -42,12 +42,18 @@ module ProjectDataPlugin
         if project['attic_issue']
           project['attic_issue_link'] =  "https://issues.apache.org/jira/browse/" + project['attic_issue']
         end
-        shortdesc = project['project_description']
-        idx = shortdesc.index('.')
-        if idx and idx > 0
-          shortdesc = shortdesc.slice(0, idx + 1)
+        if project['project_shortdesc'].nil?
+          shortdesc = project['project_description']
+          idx = shortdesc.index('.')
+          if idx and idx > 0
+            shortdesc = shortdesc.slice(0, idx + 1)
+          end
+          retired_proj = site.data['committee-retired']['retired'][projectId]
+          if retired_proj
+            shortdesc = retired_proj['description']
+          end
+          project['project_shortdesc'] =  shortdesc
         end
-        project['project_shortdesc'] =  shortdesc
         projects.push(project)
       end
 
