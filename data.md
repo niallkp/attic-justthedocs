@@ -40,9 +40,9 @@ See the [Any23 Example below](#example-yaml-file) for an idea of what these file
 |attic_issue|Optional|ATTIC-nnn|The [Attic JIRA](https://issues.apache.org/jira/projects/ATTIC/) ID managing the projects retirement|
 |attic_date|Optional|yyyy-mm-dd|Date the move to the Attic was completed|
 |attic_banner|Optional|true/false|Cause the ***Attic Banner*** to be displayed on the project's website (normally true)|
-|project_name|Optional| |defaults to the `${project_id}` (capitialized)|
-|project_longname|Optional| | defaults to the `${project_name}`|
-|project_domain|Optional|defaults to `${project_id}.apache.org`|
+|project_name|Optional|text|defaults to the `${project_id}` (capitialized)|
+|project_longname|Optional|text| defaults to the `${project_name}`|
+|project_domain|Optional|domain name|defaults to `${project_id}.apache.org`|
 |project_description|Required|text|Description of the project|
 |project_shortdesc|Optional|text|defaults either to the `description` in the `retired_projects.json` file or the first sentence of the `${project_description}`|
 |additional_text|Optional|text|Additional Text displayed on the project page below the project description|
@@ -50,18 +50,17 @@ See the [Any23 Example below](#example-yaml-file) for an idea of what these file
 |board_reports|Required|true/false|Cause a link to the project's Board Reports be shown on the project's page|
 |downloads|Required|true/false|Cause a link to the archive donwload's page for the project to be shown on the project page|
 |archive_path|Optional|path|Path to the project's download area. Defaults to the `${project_id}|
-|source_repositories|Optional|array|An array of the project's sopurce respository types|
+|source_repositories|Optional|Array|An array of the project's sopurce respository types|
 |source_repositories: type|Required|Git,Subversion|Type of Source Respository|
 |source_repositories: path|Optional|path|Alternative respoitory path. Defaults to `${project_id}`|
-|mailing_lists|Optional|array|List of the project's public mailing lists (e.g. dev, user etc)|
+|mailing_lists|Optional|Array|List of the project's public mailing lists (e.g. dev, user etc)|
 |mailing_lists_prefix|Optional| |mbox_prefix if required (usually for Subprojects)|
-|issue_tracker|Optional|map|Details of the project's Issue tracker(s)|
+|issue_tracker|Optional|Map|Details of the project's Issue tracker(s)|
 |issue_tracker: type|Required|JIRA, Bugzilla|Type of Issue Tracker|
-|issue_tracker: keys|Optional|array|List of Issue Tracker Key(s). Defaults to `${project_id}`|
-|wiki|Optional|map|Details of the project's Issue tracker(s)|
+|issue_tracker: keys|Optional|Array|List of Issue Tracker Key(s). Defaults to `${project_id}`|
+|wiki|Optional|Map|Details of the project's Issue tracker(s)|
 |wiki: type|Required|CWIKI|Type of Wiki. CWIKI causes the ***Attic Banner** to displayed on the CWIKI spaces|
-|wiki: keys|Optional|array|List of Wiki Key(s). Defaults to `${project_id}`|
-|wiki:
+|wiki: keys|Optional|Array|List of Wiki Key(s). Defaults to `${project_id}`|
 |related_projects_text|Optional|text|Text displayed before the list of related projects (if any)|
 |related_projects|Optional|Array of Maps|Details of Related Projects|
 |related_projects: name|Optional|text|Name of the related project|
