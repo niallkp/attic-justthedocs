@@ -45,12 +45,12 @@ to move that PMC into the Attic and gently close it down.
    with other generated parts to move the project to the Attic.
    Generated issue content typically contains following steps (see ["How to"](#how-to-general-pointers) below for a description
    of each step):
-   - [#](#confirm) Confirm Board Resolution
-   - [#](#confirm) Inform users of the move to the Attic
-   - [#](#confirm) Create project page on Attic site: https://attic.apache.org/projects/$project.html
-   - [#](#confirm) Update the project DOAP files (if any) or copy to [projects-override](https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/)
-   - [#](#confirm) Get infra lock down project's resources
-   - [#](#confirm) Announce on [announce at apache.org](https://lists.apache.org/list?announce@apache.org:lte=1M:%22is%20now%20retired%22)
+   - [#](#how-to-1-confirm-board-resolution) Confirm Board Resolution
+   - [#](#how-to-2-inform-users-of-the-move-to-the-attic) Inform users of the move to the Attic
+   - [#](#how-to-3-create-project-page-on-attic-site) Create project page on Attic site: https://attic.apache.org/projects/$project.html
+   - [#](#how-to-4-update-the-project-doap-file-if-any) Update the project DOAP files (if any) or copy to [projects-override](https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/)
+   - [#](#how-to-5-get-infra-lock-down-projects-resources) Get infra lock down project's resources
+   - [#](#how-to-6-announce-on-announceapacheorg) Announce on [announce at apache.org](https://lists.apache.org/list?announce@apache.org:lte=1M:%22is%20now%20retired%22)
 
 The Attic PMC will then execute the steps: getting help from terminating project is welcome, particularly
 on informing users step or any other useful action at project's level like modifying DOAP.
@@ -103,7 +103,8 @@ Also bear in mind that the user mailing list may already know and you can skip t
 or you can get help from project having asked to move to the Attic. Make sure you read that 
 thread if it does exist.
 
-### How to: 3. Create project page on Attic site: https://attic.apache.org/projects/${project}.html
+### How to: 3. Create project page on Attic site:
+**https://attic.apache.org/projects/${project}.html**
 
 The Attic website is built using Anakia. [Anakia](https://velocity.apache.org/anakia/) is
 an old site technology built on top of Apache Velocity. You can get the source for the site
@@ -133,7 +134,8 @@ It should be deleted after use, and not committed to SVN.
 The [buildbot job](https://ci2.apache.org/#/builders/16) will build the site
 and commit the result which will be published soon after.
 
-### How to: 4. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
+### How to: 4. Update the project DOAP file (if any):
+**https://projects.apache.org/project.html?${project}**
 
 The files referenced are in [https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk]
 (https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk), which every Apache committer can update.
