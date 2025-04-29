@@ -76,6 +76,7 @@ The project YAML files are used to generate the following:
 |attic_issue|Optional|ATTIC-nnn|The [Attic JIRA](https://issues.apache.org/jira/projects/ATTIC/) ID managing the projects retirement||
 |attic_date|Optional|yyyy-mm-dd|Date the move to the Attic was completed||
 |attic_banner|Optional|true/false|Cause the ***Attic Banner*** to be displayed on the project's website (normally true)||
+|project_type|Optional|PMC, Subproject|Defaults to ***PMC*** (Historically Attic took in sub-projects, which is no longer the case)||
 |project_name|Optional|text|defaults to the `${project_id}` (capitialized)||
 |project_longname|Optional|text| defaults to the `${project_name}`|**ODE**: [YAML]({{site.repo}}/blob/main/_data/projects/ode.yaml)/[Page]({% link projects/ode.html %})|
 |project_domain|Optional|domain name|defaults to `${project_id}.apache.org`|**Quetzalcoatl**: [YAML]({{site.repo}}/blob/main/_data/projects/quetzalcoatl.yaml)/[Page]({% link projects/quetzalcoatl.html %})|
