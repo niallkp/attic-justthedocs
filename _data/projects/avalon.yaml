@@ -19,5 +19,7 @@ mailing_lists:
     - apps-dev
     - cvs
     - phoenix-dev
+issue_tracker:
+    type: JIRA
 wiki:
     type: CWIKI

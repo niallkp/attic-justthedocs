@@ -19,5 +19,8 @@ mailing_lists:
     - user
 issue_tracker:
     type: JIRA
+    keys:
+    - CLOWNFISH
+    - LUCY
 wiki:
     type: CWIKI

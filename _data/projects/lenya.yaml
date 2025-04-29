@@ -17,6 +17,6 @@ mailing_lists:
     - commits
     - user
 issue_tracker:
-    type: JIRA
+    type: Bugzilla
 wiki:
     type: CWIKI
