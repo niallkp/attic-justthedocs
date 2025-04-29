@@ -19,7 +19,6 @@ limitations under the License.
 {% endcomment %}
 
 {%- assign project_name     = page.project_name %}
-{%- assign project_longname = page.project_longname %}
 {%- assign project_domain   = page.project_domain %}
 {%- assign resolution_file  = page.retirement_date | date: "%Y/board_minutes_%Y_%m_%d.txt" %}
 {%- assign resolution_locn  = resolution_file | prepend: "https://svn.apache.org/repos/asf/infrastructure/site/trunk/content/foundation/records/minutes/" %}
@@ -166,7 +165,7 @@ Consider the following template when announcing that the project is now retired:
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight">
 <code>
-{%- include announce-email-template.html project_id=page.project_id name=project_name longname=project_longname description=page.project_description %}
+{%- include announce-email-template.html project_id=page.project_id name=project_name longname=page.project_apachename description=page.project_description %}
 </code>
 </pre></div></div>
 

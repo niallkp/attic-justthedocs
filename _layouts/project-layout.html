@@ -36,7 +36,7 @@ limitations under the License.
   and the move to the Attic
   {%- if page.attic_date %}
     {%- if page.attic_issue %}
-      was completed in <a href="https://issues.apache.org/jira/browse/{{ page.attic_issue }}">{{ page.attic_date | date: "%B %Y" }}</a>.
+      was completed in <a href="{{ page.attic_issue_link }}">{{ page.attic_date | date: "%B %Y" }}</a>.
     {%- else %}
       was completed in <b>{{ page.attic_date | date: "%B %Y" }}</b>.
     {%- endif -%}
