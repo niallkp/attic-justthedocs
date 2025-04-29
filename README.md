@@ -1,174 +1,135 @@
-# just-the-docs-template
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+-->
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+# Apache Attic Website
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+This is the source code for the website at [attic.apache.org](https://attic.apache.org)
+which manages ASF projects which have retired.
 
-More specifically, the created site:
+This site uses [Jekyll](https://github.com/jekyll/jekyll), which is a static site generator,
+with the [Just The Docs](https://just-the-docs.github.io/just-the-docs/) Theme. See:
+ - [The Jekyll Docs](https://jekyllrb.com/docs/) on how to install Jekyll and build this
+site locally.
+ - [Just The Docs](https://just-the-docs.github.io/just-the-docs/) on configuring the theme
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+## Overview
 
-To get started with creating a site, simply:
+The [Attic Website](https://attic.apache.org) is composed of the following:
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+  - Simple `markdown` pages such as the _home_ (`index.md`) and _Process_ (`process.md`) pages.
+  - A `yaml` file for each project in the `_data/projects` directory which contains all the
+    details about the project and its retirement
+  - The _Process Tracking_ (`tracking.md`) page which generates a table showing the status of each
+    project generated from the files in `_data/projects' directory.
+  - [Jekyll Plugins](https://jekyllrb.com/docs/plugins/) which generate pages and files for the
+    retired projects from the files in `_data/projects' directory:
+    - `_plugins/projects-plugin.rb` generates the [project pages](https://attic.apache.org/projects/)
+      from the project's `yaml` data file.
+    - `_plugins/attic-banner-plugin.rb` generates a _flag_ file to indicate that the _Attic Banner_
+      should be added to a project's website (based on the project's `yaml` data file).
+    - `_plugins/cwiki-banner-plugin.rb` generates a _flag_ file to indicate that the _Attic Banner_
+      should be added to the project's CWIKI spaces (based on the project's `yaml` data file).
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+## Project YAML Data File
 
-After completing the creation of your new site on GitHub, update it as needed:
+The project YAML files contain the following information in order to generate the project pages:
+  - **Retirement Date** (usually the date of the board meeting the project was terminated)
+  - **JIRA ID** of the ticket used to track the project's move to the Attic
+  - **Completion Date** of the project's move to the Attic
+  - **Project Description**
+  - **Source Code** repositorie(s)
+  - **Mailing Lists**
+  - **Issue Tracker(s)**
+  - **Wiki** space(s)
+  - **Download Details**
+  - **Related Projects**
 
-## Replace the content of the template pages
+Creating/Updating a project's YAML file updates the project page, updates the Tracking page
+and generates any required flags for the project's website and wiki.
 
-Update the following files to your own content:
+The structure of the project YAML file is shown below:
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+```yaml
+retirement_date: yyyy-mm-dd      ### [REQUIRED] Date the project retired (date of board meeting)
+attic_issue: ATTIC-XXX           ### [OPTIONAL] The JIRA-ID managing the projects retirement
+attic_date: yyyy-mm-dd           ### [OPTIONAL] Date the move to the Attic was completed
+attic_banner: true               ### [OPTIONAL] Valid values: true/false (should banner be generated, normally true)
+revived_date: yyyy-mm-dd         ### [OPTIONAL] Date the project was revived - moved out of the Attic
+project_name: [Another Name]     ### [OPTIONAL] defaults to this file name
+project_longname:                ### [OPTIONAL] defaults to this file name
+project_domain: [alt domain]     ### [OPTIONAL] defaults to this file name + ".apache.org"
+project_description: >-
+    [Project description here]
+additional_text: >-
+    [Put some text here]
+board_resolution: true           ### [REQUIRED] Valid values: true/false (link to board minutes from retirement date?)
+board_reports: true              ### [REQUIRED] Valid values: true/false (include Board Reports section?)
+downloads: true                  ### [REQUIRED] Valid values: true/false (include Downloads section?)
+archive_path:                    ### [OPTIONAL] Defaults to this file name
+source_repositories:
+    - type: Git                  ### [REQUIRED] Valid Values: Subversion, Git (may have both)
+      path: [some/path]          ### [OPTIONAL] Defaults to this file name
+mailing_lists:
+    - dev
+    - commits
+    - user
+mailing_lists_prefix:            ### [OPTIONAL] Defaults to this file name
+issue_tracker:
+    type: JIRA                   ### [REQUIRED] Valid Values: JIRA, Bugzilla
+    keys:
+      - JIRA_KEY_1               ### [OPTIONAL] Defaults to this file name
+wiki:
+    type: CWIKI                  ### [REQUIRED] Valid values: CWIKI
+    keys:
+      - WIKI_KEY_1               ### [OPTIONAL] Defaults to this file name
+related_projects_text: >-
+    [Put some description here]  ### [OPTIONAL]
+related_projects:
+    - name:                      ### [OPTIONAL]
+      url:                       ### [OPTIONAL]
+      description:               ### [REQUIRED]
 
-## Changing the version of the theme and/or Jekyll
+```
 
-Simply edit the relevant line(s) in the `Gemfile`.
+Heres an example of a file for **Any23**:
 
-## Adding a plugin
+```yaml
+retirement_date: 2023-06-21
+attic_issue: ATTIC-215
+attic_date: 2023-10-01
+attic_banner: true 
+project_description: >-
+    The mission of Apache Any23 (Anything to Triples) was the creation and
+    maintenance of software related to automatic crawling, parsing, analyzing,
+    producing, validating and converting RDF (Resource Description Framework) data.
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
-
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
-
-- Add the following to your site's `Gemfile`:
-
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+```
