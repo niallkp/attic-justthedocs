@@ -15,5 +15,4 @@ mailing_lists:
     - dev
     - commits
     - user
-issue_tracker:
-    type: JIRA
+# Did not have an issue tracker
