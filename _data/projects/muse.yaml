@@ -3,6 +3,7 @@ retirement_date: 2013-01-01
 attic_issue: ATTIC-123
 attic_date: 2014-05-16
 attic_banner: false
+project_type: Subproject
 project_name: WS Muse
 project_domain: ws.apache.org
 project_description: >-

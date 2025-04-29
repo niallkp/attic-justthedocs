@@ -3,6 +3,7 @@ retirement_date: 2014-09-01
 attic_issue: ATTIC-133
 attic_date: 2015-07-12
 attic_banner: false
+project_type: Subproject
 project_name: Axis Savan/Java
 project_description: >-
     Savan/Java was a Java implementation of WS-Eventing specification.

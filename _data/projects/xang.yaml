@@ -3,6 +3,7 @@ retirement_date: 2009-12-22
 attic_issue: ATTIC-44
 attic_date: 2010-02-10
 attic_banner: false
+project_type: Subproject
 project_domain: xml.apache.org/xang
 project_description: >-
     Xang was an XML Web Framework that aggregated multiple data sources,

@@ -3,6 +3,7 @@ retirement_date: 2010-10-20
 attic_issue: ATTIC-95
 attic_date: 2010-10-27
 attic_banner: false
+project_type: Subproject
 project_name: Jakarta ECS
 project_domain: jakarta.apache.org/ecs
 project_description: >-

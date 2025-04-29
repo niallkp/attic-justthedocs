@@ -28,11 +28,11 @@ limitations under the License.
 {%- assign list_date_fmt = "%b %Y" %}
 
 
-|Project|Description|Retired|
-|:------|:----------|:------|
+|Project|Tyepe|Description|Retired|
+|:------|:----|:----------|:------|
 {%- for project in projects_by_date -%}
 {%- assign retire_date = project.retirement_date  | date: list_date_fmt -%}
 {%- assign attic_date = project.attic_date | date: list_date_fmt -%}
 {% assign proj_link = project.project_id | prepend: "projects/" | append: ".html" %}
-|{{forloop.index}}. [{{ project.project_apachename }}]({%- link {{proj_link}} -%})|{{project.project_shortdesc}}|{{ retire_date }}|
+|{{forloop.index}}. [{{ project.project_apachename }}]({%- link {{proj_link}} -%})|{{project.project_type}}|{{project.project_shortdesc}}|{{ retire_date }}|
 {%- endfor -%}

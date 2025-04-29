@@ -3,6 +3,7 @@ retirement_date: 2011-04-20
 attic_issue: ATTIC-117
 attic_date: 2011-08-06
 attic_banner: false
+project_type: Subproject
 project_name: Jakarta Regexp
 project_domain: jakarta.apache.org/regexp
 project_description: >-

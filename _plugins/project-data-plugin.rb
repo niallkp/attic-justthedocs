@@ -54,6 +54,9 @@ module ProjectDataPlugin
           end
           project['project_shortdesc'] =  shortdesc
         end
+        if project['project_type'].nil?
+          project['project_type'] = 'PMC'
+        end
         projects.push(project)
       end
 

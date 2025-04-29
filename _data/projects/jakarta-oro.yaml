@@ -3,6 +3,7 @@ retirement_date: 2010-10-20
 attic_issue: ATTIC-96
 attic_date: 2010-10-28
 attic_banner: false
+project_type: Subproject
 project_name: Jakarta ORO
 project_domain: jakarta.apache.org/oro
 project_description: >-
