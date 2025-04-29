@@ -61,8 +61,8 @@ See the [Any23 Example below](#example-yaml-file) for an idea of what these file
 |wiki|Optional|Map|Details of the project's Issue tracker(s)|
 |wiki: type|Required|CWIKI|Type of Wiki. CWIKI causes the ***Attic Banner** to displayed on the CWIKI spaces|
 |wiki: keys|Optional|Array|List of Wiki Key(s). Defaults to `${project_id}`|
-|related_projects_text|Optional|text|Text displayed before the list of related projects (if any)|
-|related_projects|Optional|Array of Maps|Details of Related Projects|
+|related_projects_text|Optional|text|Text displayed before the list of related projects (if any) on the project's page|
+|related_projects|Optional|Array of Maps|Details of Related Projects, shown at the bottom of the project page (if any)|
 |related_projects: name|Optional|text|Name of the related project|
 |related_projects: url|Optional|url|URL of the related project|
 |related_projects: description|Required|text|Description of the related project|
@@ -95,3 +95,28 @@ wiki:
     type: CWIKI
 ```
 
+
+### YAML Template File
+The following is a standard starter template for a YAML file:
+
+```yaml
+retirement_date: yyyy-mm-dd
+attic_issue: ATTIC-nnn
+attic_date:
+attic_banner: true 
+project_description: >-
+    [put the project description here]
+board_resolution: true
+board_reports: true
+downloads: true
+source_repositories:
+    - type: Git
+mailing_lists:
+    - dev
+    - commits
+    - user
+issue_tracker:
+    type: JIRA
+wiki:
+    type: CWIKI
+```
