@@ -50,7 +50,7 @@ module ProjectTemplatesPlugin
       @data = project.clone
       @data['layout'] ='project-templates-layout'
       @data['title'] = project['project_name'] + ' Templates'
-      @data['parent'] = project['project_name']
+      @data['parent'] = 'Process Tracking'
       @data['nav_exclude'] = false   # Show link under project page
 
     end
