@@ -46,8 +46,8 @@ to move that PMC into the Attic and gently close it down.
    Generated issue content typically contains following steps (see ["How to"](#how-to-general-pointers) below for a description
    of each step):
    - [#](#how-to-1-confirm-board-resolution) Confirm Board Resolution
-   - [#](#how-to-2-inform-users-of-the-move-to-the-attic) Inform users of the move to the Attic
-   - [#](#how-to-3-create-project-page-on-attic-site) Create project page on Attic site: https://attic.apache.org/projects/$project.html
+   - [#](#how-to-2-create-project-page-on-attic-site) Create project page on Attic site: https://attic.apache.org/projects/$project.html
+   - [#](#how-to-3-inform-users-of-the-move-to-the-attic) Inform users of the move to the Attic
    - [#](#how-to-4-update-the-project-doap-file-if-any) Update the project DOAP files (if any) or copy to [projects-override](https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/)
    - [#](#how-to-5-get-infra-lock-down-projects-resources) Get infra lock down project's resources
    - [#](#how-to-6-announce-on-announceapacheorg) Announce on [announce at apache.org](https://lists.apache.org/list?announce@apache.org:lte=1M:%22is%20now%20retired%22)
@@ -87,9 +87,38 @@ This automatically removes VP entry on [https://www.apache.org/foundation/leader
 ([src](https://github.com/apache/www-site/blob/main/content/index.ezmd#L304)): see [www-site](https://github.com/apache/www-site)
 and its rendered HTML in [asf-site](https://github.com/apache/www-site/tree/asf-site) branch.
 
-### How to: 2. Inform users of the move to the Attic
+### How to: 2. Create project page on Attic site:
+**https://attic.apache.org/projects/${project}.html**
 
-Let the users know that the PMC is moving into the Attic. Use the following template:
+The Attic Website uses [Jekyll](https://github.com/jekyll/jekyll), which generates the
+[Project Pages]({% link projects.md %}) from [project data files]({{site.repo}}/blob/main/_data/projects/)
+in [YAML Format](https://en.wikipedia.org/wiki/YAML).
+
+Adding a project to the website is done by adding a YAML file for the project to the
+[_data/projects]({{site.repo}}/blob/main/_data/projects/) directory.
+This is currently a manual process, but we hope to automate it more in the future:
+  - clone the Git [Attic Repository]({{site.repo}}/blob/main/_data/projects/)
+  - Create the project YAML file (see the [Project Data]({% link data.md %}) page
+    for help on crafting the YAML file)
+  - Commit the file to your clone and open a PR request
+
+Once the PR is merged, Jekyll will automatically generate the project page.
+
+Once the page is live:
+  - Check the project site carries the **Attic Banner**
+  - Check any CWIKI spaces carry the  **Attic Banner**
+  - Use the project's [Template Page]({% link tracking.md %}) to help with:
+    - Creating the Attic JIRA
+    - Creating the Infra JIRA
+    - Templates for User & Announcement Emails
+
+### How to: 3. Inform users of the move to the Attic
+
+Once the project page is live on the Attic website, you can use the project's
+[Template Page]({% link tracking.md %}) to get a project specific text for the
+User email.
+
+The text will be based on the following template, replaced with project specific values.
 
 ```
 {% include user-email-template.html name="${project}" attic_issue="ATTIC-${#}" %}
@@ -102,37 +131,6 @@ to avoid moderation (if the project hasn't been removed yet).
 Also bear in mind that the user mailing list may already know and you can skip this stage,
 or you can get help from project having asked to move to the Attic. Make sure you read that 
 thread if it does exist.
-
-### How to: 3. Create project page on Attic site:
-**https://attic.apache.org/projects/${project}.html**
-
-The Attic website is built using Anakia. [Anakia](https://velocity.apache.org/anakia/) is
-an old site technology built on top of Apache Velocity. You can get the source for the site
-from Subversion:
-
-  `svn co https://svn.apache.org/repos/asf/attic/site`
-
-You can generate the required changes using the Python3
-[`retire.py`](https://svn.apache.org/repos/asf/attic/site/retire.py) script as follows:
-
-  `./retire.py id1 \[id2...\]`
-
-This should generate the following files for each ID, as well as updating `xdocs/stylesheets/project.xml`:
-
-  - `ID.jira.tmp`
-  - `xdocs/flagged/ID` (this is a directory, used to add the Attic banner)
-  - `xdocs/projects/ID.xml`
-  - `cwiki_retired/WIKI_ID.txt` (this adds the CWIKI banner for projects)
-
-The code allows for wiki aliases, as described in the cwiki\_retired/AAREADME.txt file.
-
-Review the changes in `xdocs/`, then commit to svn.
-
-The `ID.jira.tmp` file is text that can be copy-pasted into a JIRA description.
-It should be deleted after use, and not committed to SVN.
-
-The [buildbot job](https://ci2.apache.org/#/builders/16) will build the site
-and commit the result which will be published soon after.
 
 ### How to: 4. Update the project DOAP file (if any):
 **https://projects.apache.org/project.html?${project}**
@@ -156,8 +154,9 @@ review and commit
 Open an [Infrastructure JIRA](https://issues.apache.org/jira/browse/INFRA) issue identifying
 the resources that need turning off/making read only.
 
-The content of the issue can be generated using [`infrajiratext.py`]
-(https://svn.apache.org/repos/asf/attic/site/infrajiratext.py).
+Once the project page is live on the Attic website, you can use the project's
+[Template Page]({% link tracking.md %}) to get project specific content for
+the Infrastructure JIRA.
 
 Typically, it contains steps like following, that need to be tweaked based on assets of the retired project:
 
@@ -173,7 +172,12 @@ Typically, it contains steps like following, that need to be tweaked based on as
 ### How to: 6. Announce on announce@apache.org
 
 Announce that the project [is now retired](https://lists.apache.org/list?announce@apache.org:lte=1M:%22is%20now%20retired%22).
-Consider the following template.
+
+Once the project page is live on the Attic website, you can use the project's
+[Template Page]({% link tracking.md %}) to get a project specific text for the
+Announcement email.
+
+The text will be based on the following template, replaced with project specific values.
 
 Sometimes, the user mailing list will not be shut down. If that is the case,
 it should be mentioned in the announce. e.g. add "The user mailing list remains open."
