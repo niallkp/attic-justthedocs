@@ -103,7 +103,7 @@ oversight: the list may be found on the Incubator's
 
 [JustTheDocs](https://just-the-docs.github.io/just-the-docs/docs/configuration/#color-scheme)
 comes with **Light** and **Dark** schemes and this website uses a custom
-[Attic scheme]({{site.github.repository_url}}/blob/main/_sass/color_schemes/attic.scss),
+[Attic scheme]({{site.repo}}/blob/main/_sass/color_schemes/attic.scss),
 which extends the **Light** scheme.
 
 Click the buttons below to preview the different schemes:

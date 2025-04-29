@@ -6,6 +6,7 @@ url: https://attic.apache.org/
 
 include: [.htaccess]
 timezone: UTC
+repo: https://github.com/niallkp/attic-justthedocs
 
 ### just-the-docs Configuration
 theme: just-the-docs
