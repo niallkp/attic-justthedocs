@@ -13,8 +13,10 @@ source_repositories:
     - type: Subversion
 mailing_lists:
     - dev
-    - commits
-    - user
+    - users
+    - cvs
+    - docs
+    - users-fr
 issue_tracker:
     type: JIRA
     keys:

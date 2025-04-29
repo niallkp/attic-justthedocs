@@ -12,8 +12,8 @@ downloads: false
 source_repositories:
     - type: Subversion
 mailing_lists:
-    - dev
     - commits
+    - labs
     - tech
 issue_tracker:
     type: JIRA

@@ -15,7 +15,7 @@ source_repositories:
 mailing_lists:
     - dev
     - commits
-    - user
+    - users
 issue_tracker:
     type: JIRA
 wiki:
