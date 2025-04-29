@@ -29,11 +29,10 @@ Much of the content on this website is generated from
 [project data files]({{site.repo}}/blob/main/_data/projects/) in
 [YAML Format](https://en.wikipedia.org/wiki/YAML). This page describe 
 the contents of how the data files are used and the attributes in the
-files. See the [Any23 Example below](#example-yaml-file) for an idea of
-what these files look like.
- - [Summary](#how-the-data-files-are-used)
+files:
+ - [How the Data Files are Used](#how-the-data-files-are-used)
  - [Data File Attributes (YAML)](#data-file-attributes-yaml)
- - [Example YAML File](#how-the-data-files-are-used)
+ - [Example YAML File](#example-yaml-file)
  - [YAML Template File](#yaml-template-file)
 
 ## How the Data Files are Used
