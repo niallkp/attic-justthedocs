@@ -53,7 +53,7 @@ module CwikBanngerPlugin
 
       @site = site                   # the current site instance.
       @base = site.source            # path to the source directory.
-      @dir  = 'flagged/cwiki'        # the directory the page will reside in.
+      @dir  = 'cwiki_retired'        # the directory the page will reside in.
 
       # Page name
       @basename = cwiki_key.downcase # filename without the extension.

@@ -46,11 +46,11 @@ module AtticBannerPlugin
 
       @site = site                   # the current site instance.
       @base = site.source            # path to the source directory.
-      @dir  = 'flagged/site'         # the directory the page will reside in.
+      @dir  = 'flagged/' + projectId # the directory the page will reside in.
 
       # Page name
-      @basename = projectId          # filename without the extension.
-      @ext      = '.txt'             # the extension.
+      @basename = 'git'              # filename without the extension.
+      @ext      = '.keep'            # the extension.
       @name     = @basename + @ext   # filename
 
       # Define custom data.
