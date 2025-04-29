@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Resolution
-#nav_exclude: true
 parent: Process
+nav_exclude: false
+nav_order: 1
 ---
 {%- comment -%}
 Licensed to the Apache Software Foundation (ASF) under one or more
