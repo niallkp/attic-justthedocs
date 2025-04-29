@@ -30,7 +30,7 @@ This page describe the contents of those files and what each attribute is used f
 
 ### Example YAML File
 Below is an example, of a [YAML file for Any23]({{site.repo}}/blob/main/_data/projects/any23.yaml)
-which generates the [Any23 Project Pages({% link projects/any23.html %}).
+which generates the [Any23 Project Pages]({% link projects/any23.html %}).
 
 ```yaml
 retirement_date: 2023-06-21
