@@ -58,6 +58,7 @@ module ProjectsPlugin
       @data['layout'] ='project-layout'
       @data['title'] = project['project_name']
       @data['parent'] = 'Retired Projects'
+      @data['has_toc'] = true
     end
   end
 end

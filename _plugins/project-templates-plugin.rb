@@ -49,6 +49,9 @@ module ProjectTemplatesPlugin
       # Define custom data.
       @data = project.clone
       @data['layout'] ='project-templates-layout'
+      @data['title'] = project['project_name'] + ' Templates'
+      @data['parent'] = project['project_name']
+      @data['nav_exclude'] = false   # Show link under project page
 
     end
   end
